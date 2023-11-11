@@ -110,9 +110,11 @@ Route::get('/hi/{$name}', [PostController::class, 'hello2']);
 /* Применение параметра маршрутов*/
 Route::get('/hello/{id}', [PostController::class, 'hello3'])->where('id', '[1-4]');
 
-
-
-
 Route::get('/hello5/{name}', [PostController::class, 'hello5']);
+
+/* Представление */
+Route::get('/hello6', [PostController::class, 'hello6']);
+
+Route::get('/hello7/{name}', [PostController::class, 'hello7']);
 
 

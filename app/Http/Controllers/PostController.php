@@ -34,4 +34,10 @@ class PostController extends Controller
             return "error";
         }
     }
+    public  function hello6() {
+        return view('post.hello');
+    }
+    public  function  hello7($name) {
+        return view('post.hello7', ['name' => $name, 'title']);
+    }
 }
