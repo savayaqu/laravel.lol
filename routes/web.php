@@ -121,3 +121,11 @@ Route::get('/hello7/{name}', [PostController::class, 'hello7']);
 
 Route::get('/testing', [TestingController::class, 'index']);
 
+
+use App\Http\Controllers\StudentController;
+Route::get('/students', [StudentController::class, 'shows']);
+Route::get('/students/{id}', [StudentController::class, 'show']);
+
+use App\Http\Controllers\UserController;
+Route::get('/users', [UserController::class, 'shows']);
+Route::get('/users/{id}', [UserController::class, 'show']);
